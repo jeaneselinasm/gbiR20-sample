@@ -7,7 +7,7 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="text-center mb-12">
         <h1 className="text-4xl font-bold mb-4">About GBI My Home Rawasari</h1>
-        <p className="text-xl text-gray-600">Rayon 20 - Transforming Lives Through Christ's Love</p>
+        <p className="text-xl text-gray-600">Rayon 20 - Transforming Lives Through {`Christ's`} Love</p>
       </section>
 
       {/* History & Background */}
@@ -28,7 +28,7 @@ export default function AboutPage() {
         </h2>
         <div className="bg-gray-100 p-6 rounded-lg">
           <h3 className="text-xl font-semibold mb-2">Vision:</h3>
-          <p className="text-gray-600 mb-4">To be a church that transforms lives through Christ's love.</p>
+          <p className="text-gray-600 mb-4">To be a church that transforms lives through {`Christ's`} love.</p>
           <h3 className="text-xl font-semibold mb-2">Mission:</h3>
           <p className="text-gray-600">
             Engaging in worship, discipleship, evangelism, and community service to glorify God.

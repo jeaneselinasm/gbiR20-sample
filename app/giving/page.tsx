@@ -55,7 +55,7 @@ export default function GivingPage() {
           
         </div>
         <p className="text-sm text-gray-600 mt-2">
-        Please include your name and specify 'Tithe', 'Offering', or 'Donation' in the transfer description
+        Please include your name and specify {`'Tithe'`}, {`'Offering'`}, or {`'Donation'`} in the transfer description
         </p>
       </section>
 
@@ -81,7 +81,7 @@ export default function GivingPage() {
           How Donations Are Used
         </h2>
         <p className="text-gray-700 mb-4">
-          Your contributions are vital to our ministry and community outreach. Here's how your donations make a
+          Your contributions are vital to our ministry and community outreach. {`Here's`} how your donations make a
           difference:
         </p>
         <div className="grid md:grid-cols-2 gap-6">
@@ -110,11 +110,11 @@ export default function GivingPage() {
           Thank You for Your Support
         </h2>
         <p className="text-gray-700">
-          Your generosity allows us to continue our work in spreading God's love and making a positive impact in our
+          Your generosity allows us to continue our work in spreading {`God's`} love and making a positive impact in our
           community. We are grateful for your support and prayers.
         </p>
         <p className="text-gray-700 font-semibold italic mt-2">
-        "Each of you should give what you have decided in your heart to give, not reluctantly or under compulsion, for God loves a cheerful giver."
+       {` "Each of you should give what you have decided in your heart to give, not reluctantly or under compulsion, for God loves a cheerful giver."`}
        <br /> — 2 Corinthians 9:7 <br /> 
         </p>
       </section>

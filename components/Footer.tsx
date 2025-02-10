@@ -35,27 +35,31 @@ export default function Footer() {
                 </Link>
               </li>
             </ul> */}
-            <ul className="space-y-2 text-gray-700 hover:text-gray-800">
-              <li className="flex items-center ">
+            <ul className="space-y-2 text-gray-600 hover:text-gray-900">
+              <li className="">
                 <Link
                   href="https://www.instagram.com/gbimyhome/"
-                  className=""
-                ></Link>
-                <Instagram className="h-6 w-6 mr-2 " /> @gbimyhome
+                  className="flex items-center"
+                >
+                <Instagram className="h-6 w-6 mr-2 " /> <span>@gbimyhome</span>
+                </Link>
               </li>
-              <li className="flex items-center">
+              <li className="">
                 <Link
                   href="https://www.facebook.com/profile.php?id=100082063553461"
-                  className="text-gray-600 hover:text-gray-800"
-                ></Link>
-                <Facebook className="h-6 w-6 mr-2 " /> GBI My Home Rawasari
+                  className="flex items-center"
+                >
+
+                <Facebook className="h-6 w-6 mr-2 " /> <span>GBI My Home Rawasari</span>
+                </Link>
               </li>
-              <li className="flex items-center">
+              <li className="">
                 <Link
                   href="https://www.youtube.com/c/GBIMYHOME/videos"
-                  className="text-gray-600 hover:text-gray-800"
-                ></Link>
-                <Youtube className="h-6 w-6 mr-2 " /> GBI MY HOME OFFICIAL
+                  className="flex items-center"
+                >
+                <Youtube className="h-6 w-6 mr-2 " /> <span>GBI MY HOME OFFICIAL</span> 
+                </Link>
               </li>
             </ul>
           </div>

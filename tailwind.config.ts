@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
-
+const { fontFamily } = require('tailwindcss/defaultTheme');
 export default {
     darkMode: ["class"],
     content: [
@@ -49,13 +49,21 @@ export default {
   				'3': 'hsl(var(--chart-3))',
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
-  			}
+  			},
+			blue700 : "#018BF6",
+			orange500 : "#F7A104",
+			violet900 : "#880086",
+
+
   		},
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
-  		}
+  		},
+		fontFamily : {
+			antonsc: ['Anton SC', ...fontFamily.sans],
+		}
   	}
   },
   plugins: [require("tailwindcss-animate")],

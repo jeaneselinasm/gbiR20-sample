@@ -16,11 +16,11 @@ const Header = () => {
   return (
     <header className="bg-white shadow-md">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <Link href="/" className="text-2xl font-bold text-gray-800">
+        <Link href="/" className="text-2xl text-violet900 font-bold">
           GBI My Home
         </Link>
-        <nav className="hidden md:flex space-x-4">
-          <NavLink href="/">Home</NavLink>
+        <nav className="hidden md:flex space-x-4 text-blue-700 hover:text-blue-900">
+          <NavLink  href="/">Home</NavLink>
           <NavLink href="/about">About</NavLink>
           <NavLink href="/services">Services</NavLink>
           <NavLink href="/ministries">Ministries</NavLink>
@@ -28,6 +28,7 @@ const Header = () => {
           <NavLink href="/sermons">Sermons</NavLink>
           <NavLink href="/giving">Giving</NavLink>
           <NavLink href="/contact">Contact</NavLink>
+          <NavLink href="/sub-rayon">Sub Rayon</NavLink>
         </nav>
         <Button className="md:hidden" variant="ghost" size="icon" onClick={toggleMenu} aria-label="Toggle menu">
           {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -60,6 +61,9 @@ const Header = () => {
             <MobileNavLink href="/contact" onClick={toggleMenu}>
               Contact
             </MobileNavLink>
+            <MobileNavLink href="/sub-rayon" onClick={toggleMenu}>
+              Sub Rayon
+            </MobileNavLink>
           </nav>
         </div>
       )}
@@ -68,7 +72,7 @@ const Header = () => {
 }
 
 const NavLink = ({ href, children }: { href: string; children: React.ReactNode }) => (
-  <Link href={href} className="text-gray-600 hover:text-gray-800 transition duration-300">
+  <Link href={href} className="font-semibold text-blue700 hover:text-violet900 transition duration-300">
     {children}
   </Link>
 )

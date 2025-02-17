@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Instagram, Facebook, Youtube } from "lucide-react";
+import { Instagram, Facebook, Youtube, MapPin } from "lucide-react";
 export default function Footer() {
   return (
     <footer className="bg-gray-100">
@@ -8,7 +8,7 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">GBI My Home Rawasari</h3>
             <p className="text-gray-600">
-              A place of worship, community, and growth.
+              House of Mission and Evangelism
             </p>
           </div>
           <div>
@@ -35,11 +35,11 @@ export default function Footer() {
                 </Link>
               </li>
             </ul> */}
-            <ul className="space-y-2 text-gray-600 hover:text-gray-900">
+            <ul className="space-y-2 text-gray-600 ">
               <li className="">
                 <Link
                   href="https://www.instagram.com/gbimyhome/"
-                  className="flex items-center"
+                  className="flex items-center hover:text-gray-900"
                 >
                 <Instagram className="h-6 w-6 mr-2 " /> <span>@gbimyhome</span>
                 </Link>
@@ -47,7 +47,7 @@ export default function Footer() {
               <li className="">
                 <Link
                   href="https://www.facebook.com/profile.php?id=100082063553461"
-                  className="flex items-center"
+                  className="flex items-center hover:text-gray-900"
                 >
 
                 <Facebook className="h-6 w-6 mr-2 " /> <span>GBI My Home Rawasari</span>
@@ -56,7 +56,7 @@ export default function Footer() {
               <li className="">
                 <Link
                   href="https://www.youtube.com/c/GBIMYHOME/videos"
-                  className="flex items-center"
+                  className="flex items-center hover:text-gray-900"
                 >
                 <Youtube className="h-6 w-6 mr-2 " /> <span>GBI MY HOME OFFICIAL</span> 
                 </Link>
@@ -64,7 +64,7 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
+            <h3 className="text-lg font-semibold mb-4">Hubungi Kami</h3>
             <p className="text-gray-600">
               Jalan Rawasari Komplek PSMTI No. 1, RT/RW 001/007, Kampung Bulang,
               Tanjung Pinang Timur, Kepulauan Riau - 29122

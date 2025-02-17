@@ -4,10 +4,10 @@ import Image from "next/image"
 
 export default function GivingPage() {
   return (
-    <div className="container mx-auto px-4 py-8">
-      <h1 className="text-4xl font-bold mb-6">Giving / Donation</h1>
+    <div className="container mx-auto px-4 py-8 bg-violet-100">
+      <h1 className="text-4xl font-bold mb-6 text-orange500">Persembahan</h1>
 
-      <section className="mb-12">
+      {/* <section className="mb-12">
         <h2 className="text-2xl font-semibold mb-4 flex items-center">
           <CreditCard className="h-6 w-6 mr-2 text-blue-600" />
           Online Donation Options
@@ -20,62 +20,62 @@ export default function GivingPage() {
           <Button className="w-full">One-Time Donation</Button>
           <Button className="w-full">Set Up Recurring Giving</Button>
         </div>
-      </section>
+      </section> */}
 
       <section className="mb-12 bg-gray-50 p-6 rounded-lg">
         <h2 className="text-2xl font-semibold mb-4 flex items-center">
           <Building className="h-6 w-6 mr-2 text-green-600" />
-          Bank Transfer Details
+         Transfer Bank
         </h2>
         <p className="text-gray-700 mb-4">
-          For those who prefer direct bank transfers, you can use the following account details:
+        Bagi Anda yang lebih memilih transfer langsung, silakan gunakan rincian rekening berikut:
         </p>
         <div className="bg-white p-4 rounded-md shadow-sm">
           <p>
-            <strong>Bank Name:</strong> CIMB NIAGA
+            <strong> Bank CIMB NIAGA </strong> 
           </p>
           <p>
-            <strong>Account Name:</strong> GEREJA BETHEL INDONESIA JEMAAT RAWASARI
+            <strong>Nama Rekening :</strong> GEREJA BETHEL INDONESIA JEMAAT RAWASARI
           </p>
           <p>
-            <strong>Account Number:</strong> 8000 9403 9900
+            <strong>Nomor Rekening:</strong> 8000 9403 9900
           </p>
           
         </div>
         <div className="bg-white p-4 rounded-md shadow-sm">
           <p>
-            <strong>Bank Name:</strong> BANK CENTRAL ASIA
+            <strong>BANK CENTRAL ASIA</strong> 
           </p>
           <p>
-            <strong>Account Name:</strong> GBI RAWASARI
+            <strong>Nama Rekening :</strong> GBI RAWASARI
           </p>
           <p>
-            <strong>Account Number:</strong> 380 146 7111
+            <strong>Nomor Rekening :</strong> 380 146 7111
           </p>
           
         </div>
         <p className="text-sm text-gray-600 mt-2">
-        Please include your name and specify {`'Tithe'`}, {`'Offering'`}, or {`'Donation'`} in the transfer description
+        Mohon sertakan nama Anda dan cantumkan keterangan {`'Perpuluhan'`}, {`'Persembahan'`}, or {`'Sumbangan'`} dalam deskripsi transfer.
         </p>
       </section>
 
       <section className="mb-12">
             <h2 className="text-2xl font-semibold mb-4 flex items-center">
               <Smartphone className="h-6 w-6 mr-2 text-purple-600" />
-              Scan to Donate
+              Scan untuk Memberikan Persembahan
             </h2>
             <p className="text-gray-700 mb-4">
-              Use your smartphone to quickly and easily make a donation by scanning our QR code:
+            Gunakan ponsel Anda untuk berdonasi dengan cepat dan mudah melalui pemindaian kode QR berikut:
             </p>
             <div className="bg-white align-middle p-4 rounded-lg shadow-md inline-block">
               <Image src="/giving-code.png" alt="Donation QR Code" width={200} height={200} className="mx-auto" />
             </div>
             <p className="text-sm text-gray-600 mt-2">
-            The GBI My Home Rawasari Online Offering Barcode can be scanned using Mobile Banking, Dana, GoPay, LinkAja, Ovo, Paytren, Sakuku, ShopeePay, and more.
+            Kode QR Persembahan Online GBI My Home Rawasari dapat dipindai menggunakan Mobile Banking, Dana, GoPay, LinkAja, Ovo, Paytren, Sakuku, ShopeePay, dan lainnya.
             </p>
           </section>
 
-      <section>
+      {/* <section>
         <h2 className="text-2xl font-semibold mb-4 flex items-center">
           <PiggyBank className="h-6 w-6 mr-2 text-purple-600" />
           How Donations Are Used
@@ -102,20 +102,19 @@ export default function GivingPage() {
             description="Providing assistance to those in need within our church and community."
           />
         </div>
-      </section>
+      </section> */}
 
-      <section className="mt-12 bg-blue-50 p-6 rounded-lg">
+      <section className="mt-12 bg-blue-100 p-6 rounded-lg">
         <h2 className="text-2xl font-semibold mb-4 flex items-center">
           <Heart className="h-6 w-6 mr-2 text-red-600" />
-          Thank You for Your Support
+          Terima Kasih atas Pemberian Anda
         </h2>
         <p className="text-gray-700">
-          Your generosity allows us to continue our work in spreading {`God's`} love and making a positive impact in our
-          community. We are grateful for your support and prayers.
+        Kemurahan hati Anda membantu kami untuk terus menyebarkan kasih Tuhan dan memberikan dampak positif dalam komunitas. Kami sangat berterima kasih atas dukungan dan doa Anda.
         </p>
         <p className="text-gray-700 font-semibold italic mt-2">
-       {` "Each of you should give what you have decided in your heart to give, not reluctantly or under compulsion, for God loves a cheerful giver."`}
-       <br /> — 2 Corinthians 9:7 <br /> 
+       {` "Hendaklah masing-masing memberikan menurut kerelaan hatinya, jangan dengan sedih hati atau karena paksaan, sebab Allah mengasihi orang yang memberi dengan sukacita."`}
+       <br /> — 2 Korintus 9:7 <br /> 
         </p>
       </section>
     </div>

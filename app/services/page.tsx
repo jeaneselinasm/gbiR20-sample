@@ -3,8 +3,8 @@ import type React from "react" // Added import for React
 
 export default function ServicesPage() {
   return (
-    <div className="container mx-auto px-4 py-8">
-      <h1 className="text-4xl font-bold mb-6">Ibadah & Persekutuan</h1>
+    <div className="container mx-auto px-4 py-8 bg-violet-50">
+      <h1 className="text-4xl font-bold mb-6 text-violet900">Ibadah & Persekutuan</h1>
 
       <div className="space-y-12">
         <ServiceSection
@@ -38,16 +38,16 @@ export default function ServicesPage() {
 
       <div className="mt-12 space-y-8">
         <InfoSection
-          title="Location & Directions"
+          title="Lokasi"
           icon={<MapPin className="h-6 w-6 text-red-500" />}
           content="Jalan Rawasari Komplek PSMTI No. 1, RT/RW 001/007, Kampung Bulang, Tanjung Pinang Timur, Kepulauan Riau - 29122"
         />
 
-        <InfoSection
+        {/* <InfoSection
           title="Live Stream & Recorded Sermons"
           icon={<Video className="h-6 w-6 text-purple-500" />}
           content="Join our live streams on Facebook & YouTube or watch past sermons online."
-        />
+        /> */}
       </div>
     </div>
   )
@@ -59,7 +59,7 @@ function ServiceSection({
   services,
 }: { title: string; icon: React.ReactNode; services: { name: string; time: string }[] }) {
   return (
-    <section className="bg-white shadow-md rounded-lg p-6">
+    <section className="bg-white shadow-md rounded-lg p-6 hover:bg-orange-50">
       <h2 className="text-2xl font-semibold mb-4 flex items-center">
         {icon}
         <span className="ml-2">{title}</span>
@@ -81,7 +81,7 @@ function ServiceSection({
 
 function InfoSection({ title, icon, content }: { title: string; icon: React.ReactNode; content: string }) {
   return (
-    <div className="bg-gray-100 rounded-lg p-6">
+    <div className="bg-yellow-50 rounded-lg p-6">
       <h2 className="text-xl font-semibold mb-2 flex items-center">
         {icon}
         <span className="ml-2">{title}</span>

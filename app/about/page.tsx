@@ -6,14 +6,14 @@ export default function AboutPage() {
     <div className="container mx-auto px-4 py-8">
       {/* Hero Section */}
       <section className="text-center mb-12">
-        <h1 className="text-4xl font-bold mb-4">About GBI My Home Rawasari</h1>
+        <h1 className="text-4xl font-bold mb-4">Tentang GBI My Home Rawasari</h1>
         <p className="text-xl text-gray-600">Rayon 20 - Transforming Lives Through {`Christ's`} Love</p>
       </section>
 
       {/* History & Background */}
       <section className="mb-12">
         <h2 className="text-2xl font-semibold mb-4 flex items-center">
-          <Book className="mr-2" /> Church History & Background
+          <Book className="mr-2" /> Sejarah dan Latar Belakang Gereja
         </h2>
         <p className="text-gray-600">
           GBI My Home Rawasari, also known as Rayon 20, is a growing church based in Tanjung Pinang, Kepulauan Riau,
@@ -24,14 +24,14 @@ export default function AboutPage() {
       {/* Vision & Mission */}
       <section className="mb-12">
         <h2 className="text-2xl font-semibold mb-4 flex items-center">
-          <Heart className="mr-2" /> Vision & Mission Statement
+          <Heart className="mr-2" /> Visi dan Misi
         </h2>
         <div className="bg-gray-100 p-6 rounded-lg">
-          <h3 className="text-xl font-semibold mb-2">Vision:</h3>
-          <p className="text-gray-600 mb-4">To be a church that transforms lives through {`Christ's`} love.</p>
-          <h3 className="text-xl font-semibold mb-2">Mission:</h3>
+          <h3 className="text-xl font-semibold mb-2">Visi :</h3>
+          <p className="text-gray-600 mb-4">Menjadi gereja yang mengubah hidup melalui kasih Kristus.</p>
+          <h3 className="text-xl font-semibold mb-2">Misi:</h3>
           <p className="text-gray-600">
-            Engaging in worship, discipleship, evangelism, and community service to glorify God.
+          Beribadah, membina murid Kristus, memberitakan Injil, dan melayani masyarakat untuk memuliakan Tuhan.
           </p>
         </div>
       </section>
@@ -39,30 +39,29 @@ export default function AboutPage() {
       {/* Leadership Team */}
       <section className="mb-12">
         <h2 className="text-2xl font-semibold mb-4 flex items-center">
-          <Users className="mr-2" /> Leadership Team
+          <Users className="mr-2" /> Tim Kepemimpinan
         </h2>
         <div className="grid md:grid-cols-2 gap-6">
           <LeadershipCard
-            name="Rev. Dr. Fransiskus Irwan Widjaja"
-            role="Supervising Pastor"
+            name="Pdt. Dr. Fransiskus Irwan Widjaja"
+            role="Gembala Pembina"
             imageUrl="/placeholder.svg"
           />
-          <LeadershipCard name="Pdm. Willy Chandra Goh" role="Congregation Pastor" imageUrl="/placeholder.svg" />
+          <LeadershipCard name="Pdm. Willy Chandra Goh" role="Gembala Sidang" imageUrl="/placeholder.svg" />
         </div>
-        <div className="mt-6">
+        {/* <div className="mt-6">
           <h3 className="text-xl font-semibold mb-2">Church Elders and Leaders:</h3>
           <p className="text-gray-600">(List of department heads - to be filled with actual names and roles)</p>
-        </div>
+        </div> */}
       </section>
 
       {/* Denomination & Beliefs */}
       <section className="mb-12">
         <h2 className="text-2xl font-semibold mb-4 flex items-center">
-          <Church className="mr-2" /> Denomination & Theological Beliefs
+          <Church className="mr-2" /> Denominasi & Keyakinan Teologis
         </h2>
         <p className="text-gray-600">
-          We are a part of the GBI (Gereja Bethel Indonesia) denomination, emphasizing Biblical teachings, worship, and
-          spiritual growth.
+        Kami adalah bagian dari denominasi GBI (Gereja Bethel Indonesia), yang menekankan ajaran Alkitab, ibadah, dan pertumbuhan rohani.
         </p>
       </section>
     </div>

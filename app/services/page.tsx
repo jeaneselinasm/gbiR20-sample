@@ -4,7 +4,9 @@ import type React from "react" // Added import for React
 export default function ServicesPage() {
   return (
     <div className="container mx-auto px-4 py-8 bg-violet-50">
-      <h1 className="text-4xl font-bold mb-6 text-violet900">Ibadah & Persekutuan</h1>
+       <section className="text-center mb-12">
+        <h1 className="text-4xl md:text-5xl text-violet900 font-bold mb-4">Ibadah dan Persekutuan</h1>
+      </section>
 
       <div className="space-y-12">
         <ServiceSection
@@ -59,7 +61,7 @@ function ServiceSection({
   services,
 }: { title: string; icon: React.ReactNode; services: { name: string; time: string }[] }) {
   return (
-    <section className="bg-white shadow-md rounded-lg p-6 hover:bg-orange-50">
+    <section className="rounded-lg shadow-md p-6 bg-orange-50">
       <h2 className="text-2xl font-semibold mb-4 flex items-center">
         {icon}
         <span className="ml-2">{title}</span>
@@ -81,7 +83,7 @@ function ServiceSection({
 
 function InfoSection({ title, icon, content }: { title: string; icon: React.ReactNode; content: string }) {
   return (
-    <div className="bg-yellow-50 rounded-lg p-6">
+    <div className="bg-white shadow-md rounded-lg p-6">
       <h2 className="text-xl font-semibold mb-2 flex items-center">
         {icon}
         <span className="ml-2">{title}</span>

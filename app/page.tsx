@@ -26,24 +26,24 @@ export default function Home() {
       </section>
 
       {/* Quick Links */}
-      <section className="py-20 bg-violet-50">
+      <section className="py-10 bg-violet-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl text-violet900 font-semibold text-center mb-8">Explore Our Church</h2>
+          <h2 className="text-3xl text-violet900 font-semibold text-center mb-8">Jelajahi Gereja Kami</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <QuickLinkCard title="About Us" description="Discover our history, mission, and values" href="/about" />
-            <QuickLinkCard title="Worship Services" description="Experience uplifting worship and fellowship" href="/services" />
-            <QuickLinkCard title="Ministries" description="Explore ways to serve and grow in faith" href="/ministries" />
-            <QuickLinkCard title="Events & Announcements" description="Stay updated on upcoming church gatherings" href="/events" />
-            <QuickLinkCard title="Giving" description="Support our mission through your generous donations" href="/giving" />
-            <QuickLinkCard title="Contact" description="Reach out to us for questions or support" href="/contact" />
-            <QuickLinkCard title="Sub Rayon" description="Reach out to us for questions or support" href="/contact" />
+            <QuickLinkCard title="Tentang Kami" description="Temukan sejarah, misi, dan nilai-nilai gereja kami." href="/about" />
+            <QuickLinkCard title="Ibadah & Persekutuan" description="Alami ibadah yang menguatkan iman dan kebersamaan dalam persekutuan." href="/services" />
+            <QuickLinkCard title="Pelayanan" description="Jelajahi berbagai cara untuk melayani dan bertumbuh dalam iman." href="/ministries" />
+            <QuickLinkCard title="Kegiatan & Pengumuman" description="Tetap terhubung dengan informasi terbaru mengenai kegiatan gereja." href="/events" />
+            {/* <QuickLinkCard title="Donasi" description="Support our mission through your generous donations" href="/giving" /> */}
+            <QuickLinkCard title="Kontak" description="Hubungi kami untuk pertanyaan atau dukungan lebih lanjut." href="/contact" />
+            <QuickLinkCard title="Sub Rayon" description="Cabang-cabang dari gereja ini yang tersebar di berbagai wilayah." href="/contact" />
 
           </div>
         </div>
       </section>
 
       {/* Featured Content */}
-      <section className="bg-blue-50 py-16">
+      {/* <section className="bg-blue-50 py-16">
         <div className="container mx-auto px-4">
           <h2 className="text-blue-800 text-3xl font-semibold text-center mb-8">Featured Content</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -60,7 +60,7 @@ export default function Home() {
             />
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   )
 }

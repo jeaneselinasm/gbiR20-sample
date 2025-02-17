@@ -3,11 +3,11 @@ import { Book, Users, Church, Heart } from "lucide-react"
 
 export default function AboutPage() {
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 py-8 bg-blue-50">
       {/* Hero Section */}
       <section className="text-center mb-12">
-        <h1 className="text-4xl font-bold mb-4">Tentang GBI My Home Rawasari</h1>
-        <p className="text-xl text-gray-600">Rayon 20 - Transforming Lives Through {`Christ's`} Love</p>
+        <h1 className="text-4xl md:text-5xl text-violet900 font-bold mb-4">Tentang GBI My Home Rawasari</h1>
+        <p className="text-xl text-gray-700">Rayon 20 - House of Mission and Evangelism</p>
       </section>
 
       {/* History & Background */}
@@ -26,7 +26,7 @@ export default function AboutPage() {
         <h2 className="text-2xl font-semibold mb-4 flex items-center">
           <Heart className="mr-2" /> Visi dan Misi
         </h2>
-        <div className="bg-gray-100 p-6 rounded-lg">
+        <div className="bg-violet-100 p-6 rounded-lg">
           <h3 className="text-xl font-semibold mb-2">Visi :</h3>
           <p className="text-gray-600 mb-4">Menjadi gereja yang mengubah hidup melalui kasih Kristus.</p>
           <h3 className="text-xl font-semibold mb-2">Misi:</h3>

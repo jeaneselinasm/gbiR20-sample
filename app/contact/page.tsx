@@ -6,15 +6,15 @@ import { Label } from "@/components/ui/label"
 
 export default function ContactPage() {
   return (
-    <div className="container mx-auto px-4 py-8">
-      <h1 className="text-4xl font-bold mb-6">Contact Us</h1>
+    <div className="container mx-auto px-4 py-8 bg-violet-50">
+      <h1 className="text-4xl font-bold mb-6">Hubungi Kami</h1>
 
-      <div className="grid md:grid-cols-2 gap-8">
+      <div className="grid md:grid-cols-2 gap-8 bg-violet-50">
         <div>
           <section className="mb-8">
             <h2 className="text-2xl font-semibold mb-4 flex items-center">
               <MapPin className="h-6 w-6 mr-2 text-red-600" />
-              Church Address
+              Alamat Gereja
             </h2>
             <p className="text-gray-700">
               Jalan Rawasari Komplek PSMTI No. 1, RT/RW 001/007, Kampung Bulang, Tanjung Pinang Timur, Kepulauan Riau -
@@ -25,22 +25,22 @@ export default function ContactPage() {
           <section className="mb-8">
             <h2 className="text-2xl font-semibold mb-4 flex items-center">
               <Phone className="h-6 w-6 mr-2 text-green-600" />
-              Phone & Email
+              Telepon & Email
             </h2>
             <p className="text-gray-700 mb-2">
-              <strong>Email:</strong> gbimyhomerawasari@gmail.com
+              <strong>Email Utama:</strong> gbimyhomerawasari@gmail.com
             </p>
             <p className="text-gray-700">
-              <strong>Alternative Email:</strong> tanjungpinangr20@gmail.com
+              <strong>Email Alternatif:</strong> tanjungpinangr20@gmail.com
             </p>
           </section>
 
           <section className="mb-8">
             <h2 className="text-2xl font-semibold mb-4 flex items-center">
               <Clock className="h-6 w-6 mr-2 text-blue-600" />
-              Office Hours
+              Jam Operasional
             </h2>
-            <p className="text-gray-700">Monday - Friday: 9:00 AM - 5:00 PM WIB</p>
+            <p className="text-gray-700">Senin - Jumat : 9:00 AM - 17:00 WIB</p>
           </section>
 
           <section className="mb-8">
@@ -60,29 +60,29 @@ export default function ContactPage() {
 
         <div>
           <section>
-            <h2 className="text-2xl font-semibold mb-4 flex items-center">
+            <h2 className="text-2xl font-semibold mb-4 flex items-center ">
               <Mail className="h-6 w-6 mr-2 text-purple-600" />
-              Contact Form
+              Formulir Kontak
             </h2>
             <form className="space-y-4">
               <div>
-                <Label htmlFor="name">Name</Label>
-                <Input id="name" placeholder="Your Name" />
+                <Label htmlFor="name">Nama</Label>
+                <Input id="name" placeholder="Masukkan nama anda" />
               </div>
               <div>
                 <Label htmlFor="email">Email</Label>
-                <Input id="email" type="email" placeholder="your@email.com" />
+                <Input id="email" type="email" placeholder="anda@email.com" />
               </div>
               <div>
                 <Label htmlFor="subject">Subject</Label>
-                <Input id="subject" placeholder="Inquiry / Prayer Request" />
+                <Input id="subject" placeholder="Pertanyaan / Permohonan Doa" />
               </div>
               <div>
-                <Label htmlFor="message">Message</Label>
-                <Textarea id="message" placeholder="Your message here..." className="h-32" />
+                <Label htmlFor="message">Pesan</Label>
+                <Textarea id="message" placeholder="Tulis pesan anda disini..." className="h-32" />
               </div>
               <Button type="submit" className="w-full">
-                Send Message
+                Kirim Pesan
               </Button>
             </form>
           </section>

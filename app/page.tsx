@@ -36,7 +36,7 @@ export default function Home() {
             <QuickLinkCard title="Kegiatan & Pengumuman" description="Tetap terhubung dengan informasi terbaru mengenai kegiatan gereja." href="/events" />
             {/* <QuickLinkCard title="Donasi" description="Support our mission through your generous donations" href="/giving" /> */}
             <QuickLinkCard title="Kontak" description="Hubungi kami untuk pertanyaan atau dukungan lebih lanjut." href="/contact" />
-            <QuickLinkCard title="Sub Rayon" description="Cabang-cabang dari gereja ini yang tersebar di berbagai wilayah." href="/contact" />
+            <QuickLinkCard title="Sub Rayon" description="Cabang-cabang dari gereja ini yang tersebar di berbagai wilayah." href="/sub-rayon" />
 
           </div>
         </div>

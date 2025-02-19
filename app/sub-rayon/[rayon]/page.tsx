@@ -1,11 +1,17 @@
 import { subRayonData } from "@/lib/data";
-import type { PageProps } from "next";
+
+// Define type for params
+type RayonPageProps = {
+  params: {
+    rayon: string; // The dynamic segment from the URL
+  };
+};
 
 export async function generateStaticParams() {
   return subRayonData.map((rayon) => ({ rayon: rayon.id }));
 }
 
-export default function RayonPage({ params }: PageProps<{ rayon: string }>) {
+export default function RayonPage({ params }: RayonPageProps) {
   const { rayon } = params;
   const rayonDetails = subRayonData.find((r) => r.id === rayon);
 

@@ -1,30 +1,16 @@
 import { subRayonData } from "@/lib/data";
-import { Metadata } from "next";
+import type { PageProps } from "next";
 
-// Define types for props
-type RayonPageProps = {
-  params: {
-    rayon: string; // `rayon` is a string from the URL
-  };
-};
-
-// Generate static paths
 export async function generateStaticParams() {
   return subRayonData.map((rayon) => ({ rayon: rayon.id }));
 }
 
-// Define metadata for SEO (optional)
-export const metadata: Metadata = {
-  title: "Sub Rayon Page",
-  description: "Detailed information about each sub-rayon.",
-};
-
-export default function RayonPage({ params }: RayonPageProps) {
+export default function RayonPage({ params }: PageProps<{ rayon: string }>) {
   const { rayon } = params;
   const rayonDetails = subRayonData.find((r) => r.id === rayon);
 
   if (!rayonDetails) {
-    return <h1>Rayon Not Found</h1>;
+    return <h1 className="text-center text-red-500 text-2xl">Rayon Not Found</h1>;
   }
 
   return (

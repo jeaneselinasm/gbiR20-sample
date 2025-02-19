@@ -1,18 +1,18 @@
 import { subRayonData } from "@/lib/data";
 
-// Define type for params
-type RayonPageProps = {
-  params: {
-    rayon: string; // The dynamic segment from the URL
-  };
-};
+// Define the expected type for `params`
+interface RayonPageProps {
+  params: { rayon: string };
+}
 
+// Generate static paths for known rayons
 export async function generateStaticParams() {
   return subRayonData.map((rayon) => ({ rayon: rayon.id }));
 }
 
-export default function RayonPage({ params }: RayonPageProps) {
-  const { rayon } = params;
+// ✅ Make the component async to ensure params are awaited correctly
+export default async function RayonPage({ params }: Promise<RayonPageProps>) {
+  const { rayon } = await params; // ✅ Await params to prevent errors
   const rayonDetails = subRayonData.find((r) => r.id === rayon);
 
   if (!rayonDetails) {

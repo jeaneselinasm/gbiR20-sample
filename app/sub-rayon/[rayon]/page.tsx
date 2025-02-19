@@ -1,16 +1,18 @@
-import { subRayonData } from "@/lib/data";
 
-// Define type for expected props
-interface RayonPageProps {
-  params: { rayon: string };
+import { subRayonData } from "@/lib/data";
+import { notFound } from "next/navigation";
+interface RayonDetails {
+  name: string;
+  location: string;
+  description: string;
 }
 
-// ✅ Correctly access `params` without making the component async
-export default function RayonPage({ params }: RayonPageProps) {
-  const rayonDetails = subRayonData.find((r) => r.id === params.rayon);
-
-  if (!rayonDetails) {
-    return <h1 className="text-center text-red-500 text-2xl">Rayon Not Found</h1>;
+export default async function RayonPage(props : {params : Promise<{rayon : string}>}) {
+  const {rayon} = await props.params
+ 
+  const rayonDetails: RayonDetails  = subRayonData.find((r) => r.id === rayon) || notFound()
+  if (!rayon) {
+    notFound()
   }
 
   return (

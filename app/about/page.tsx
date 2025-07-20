@@ -44,13 +44,13 @@ export default function AboutPage() {
           <LeadershipCard
             name="Ps. John Doe"
             role="Lead Pastor"
-            imageUrl="/placeholder.svg"
+            imageUrl="/pastor-a.png"
             description ='With over 20 years of ministry experience, Pastor John has a passion for teaching God’s Word and mentoring leaders. He believes in building a Christ-centered community that lives out the gospel in everyday life.'
           />
           <LeadershipCard 
           name="Ps John Doe" 
           role="Associate Pastor & Worship Director" 
-          imageUrl="/placeholder.svg"
+          imageUrl="/pastor-b.png"
           description='John leads our worship ministry and supports spiritual formation in the church. He has a heart for prayer, creativity, and equipping the next generation.' 
           />
         </div>

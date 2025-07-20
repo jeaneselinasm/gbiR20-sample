@@ -10,15 +10,15 @@ export default function Home() {
       {/* Hero Section */}
       <section className=" py-20 min-h-screen bg-cover bg-center" style={{ backgroundImage: "url('/worship.png')" }}>
         <div className="container mx-auto px-4 mt-12">
-        <TypingAnimation className=" text-white text-4xl md:text-7xl font-bold text-center mb-6">2025 </TypingAnimation>
-        <TypingAnimation className=" text-white uppercase text-4xl md:text-7xl font-bold text-center mb-6">Tahun Penuaian</TypingAnimation>
-          <h2 className="text-white text-2xl md:text-4xl font-bold text-center mb-6">Selamat Datang  GBI My Home Rawasari - Rayon 20</h2>
-          <p className="text-xl text-center md:text-2xl text-white mb-8">House of mission and evangelism</p>
+        <TypingAnimation className=" text-white text-4xl md:text-7xl font-bold text-center mb-6">Welcome to</TypingAnimation>
+        <TypingAnimation className=" text-white uppercase text-4xl md:text-7xl font-bold text-center mb-6">Grace Fellowship Church</TypingAnimation>
+          {/* <h2 className="text-white text-2xl md:text-4xl font-bold text-center mb-6">We're a community of believers passionate about knowing God and making Him known. </h2> */}
+          <p className="text-xl text-center md:text-2xl text-white mb-8">We're a community of believers passionate about knowing God and making Him known. Whether you're exploring faith or looking for a church home, we invite you to journey with us.</p>
           <div className="text-center">
             <Link
               href="/services"
             >
-              <InteractiveHoverButton>Bergabunglah dalam Ibadah Kami</InteractiveHoverButton>
+              <InteractiveHoverButton>Join Us This Sunday</InteractiveHoverButton>
             </Link>
           
           </div>
@@ -28,14 +28,14 @@ export default function Home() {
       {/* Quick Links */}
       <section className="py-10 bg-violet-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl text-violet900 font-semibold text-center mb-8">Jelajahi Gereja Kami</h2>
+          <h2 className="text-3xl text-violet900 font-semibold text-center mb-8">Explore Our Church</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <QuickLinkCard title="Tentang Kami" description="Temukan sejarah, misi, dan nilai-nilai gereja kami." href="/about" />
-            <QuickLinkCard title="Ibadah & Persekutuan" description="Alami ibadah yang menguatkan iman dan kebersamaan dalam persekutuan." href="/services" />
-            <QuickLinkCard title="Pelayanan" description="Jelajahi berbagai cara untuk melayani dan bertumbuh dalam iman." href="/ministries" />
-            <QuickLinkCard title="Kegiatan & Pengumuman" description="Tetap terhubung dengan informasi terbaru mengenai kegiatan gereja." href="/events" />
+            <QuickLinkCard title="About Us" description="Discover the history, mission, and values of our church." href="/about" />
+            <QuickLinkCard title="Worship & Fellowship" description="Experience faith-affirming worship and fellowship together." href="/services" />
+            <QuickLinkCard title="Ministries" description="Explore ways to serve and grow in faith. " href="/ministries" />
+            <QuickLinkCard title="Events & Announcements" description="Stay connected with the latest information regarding church activities." href="/events" />
             {/* <QuickLinkCard title="Donasi" description="Support our mission through your generous donations" href="/giving" /> */}
-            <QuickLinkCard title="Kontak" description="Hubungi kami untuk pertanyaan atau dukungan lebih lanjut." href="/contact" />
+            <QuickLinkCard title="Contact" description="Contact us for further inquiries or support." href="/contact" />
             <QuickLinkCard title="Sub Rayon" description="Cabang-cabang dari gereja ini yang tersebar di berbagai wilayah." href="/sub-rayon" />
 
           </div>

@@ -16,8 +16,8 @@ const Header = () => {
   return (
     <header className="bg-white shadow-md">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <Link href="/" className="text-2xl text-violet900 font-bold">
-          GBI My Home
+        <Link href="/" className="text-xl text-violet900 font-bold">
+       Gace Fellowship Church
         </Link>
         <nav className="hidden md:flex space-x-4 text-blue-700 hover:text-blue-900">
           <NavLink  href="/">Home</NavLink>
@@ -26,9 +26,7 @@ const Header = () => {
           <NavLink href="/ministries">Ministries</NavLink>
           <NavLink href="/events">Events</NavLink>
           <NavLink href="/sermons">Sermons</NavLink>
-          <NavLink href="/giving">Giving</NavLink>
           <NavLink href="/contact">Contact</NavLink>
-          <NavLink href="/sub-rayon">Sub Rayon</NavLink>
         </nav>
         <Button className="md:hidden" variant="ghost" size="icon" onClick={toggleMenu} aria-label="Toggle menu">
           {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}

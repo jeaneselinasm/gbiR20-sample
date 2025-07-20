@@ -6,32 +6,31 @@ export default function AboutPage() {
     <div className="container mx-auto px-4 py-8 bg-blue-50">
       {/* Hero Section */}
       <section className="text-center mb-12">
-        <h1 className="text-4xl md:text-5xl text-violet900 font-bold mb-4">Tentang GBI My Home Rawasari</h1>
-        <p className="text-xl text-gray-700">Rayon 20 - House of Mission and Evangelism</p>
+        <h1 className="text-4xl md:text-5xl text-violet900 font-bold mb-4">🙏 About Us</h1>
+        <p className="text-xl text-gray-700"></p>
       </section>
 
       {/* History & Background */}
       <section className="mb-12">
         <h2 className="text-2xl font-semibold mb-4 flex items-center">
-          <Book className="mr-2" /> Sejarah dan Latar Belakang Gereja
+          <Book className="mr-2" /> Our Beliefs
         </h2>
         <p className="text-gray-600">
-          GBI My Home Rawasari, also known as Rayon 20, is a growing church based in Tanjung Pinang, Kepulauan Riau,
-          Indonesia. Our mission is to spread the Gospel and build a strong faith community.
+         We hold to the foundational truths of the Christian faith, rooted in Scripture, and expressed through love and grace.
         </p>
       </section>
 
       {/* Vision & Mission */}
       <section className="mb-12">
         <h2 className="text-2xl font-semibold mb-4 flex items-center">
-          <Heart className="mr-2" /> Visi dan Misi
+          <Heart className="mr-2" /> Our Mission and Vision
         </h2>
         <div className="bg-violet-100 p-6 rounded-lg">
-          <h3 className="text-xl font-semibold mb-2">Visi :</h3>
-          <p className="text-gray-600 mb-4">Menjadi gereja yang mengubah hidup melalui kasih Kristus.</p>
-          <h3 className="text-xl font-semibold mb-2">Misi:</h3>
+          <h3 className="text-xl font-semibold mb-2">Our Vision</h3>
+          <p className="text-gray-600 mb-4">A Spirit-filled church that transforms communities with the love of Christ.</p>
+          <h3 className="text-xl font-semibold mb-2">Our Mission</h3>
           <p className="text-gray-600">
-          Beribadah, membina murid Kristus, memberitakan Injil, dan melayani masyarakat untuk memuliakan Tuhan.
+          To glorify God by making disciples who love God, love people, and live to serve.
           </p>
         </div>
       </section>
@@ -39,15 +38,21 @@ export default function AboutPage() {
       {/* Leadership Team */}
       <section className="mb-12">
         <h2 className="text-2xl font-semibold mb-4 flex items-center">
-          <Users className="mr-2" /> Tim Kepemimpinan
+          <Users className="mr-2" /> Leadership Team
         </h2>
         <div className="grid md:grid-cols-2 gap-6">
           <LeadershipCard
-            name="Pdt. Dr. Fransiskus Irwan Widjaja"
-            role="Gembala Pembina"
+            name="Ps. John Doe"
+            role="Lead Pastor"
             imageUrl="/placeholder.svg"
+            description ='With over 20 years of ministry experience, Pastor John has a passion for teaching God’s Word and mentoring leaders. He believes in building a Christ-centered community that lives out the gospel in everyday life.'
           />
-          <LeadershipCard name="Pdm. Willy Chandra Goh" role="Gembala Sidang" imageUrl="/placeholder.svg" />
+          <LeadershipCard 
+          name="Ps John Doe" 
+          role="Associate Pastor & Worship Director" 
+          imageUrl="/placeholder.svg"
+          description='John leads our worship ministry and supports spiritual formation in the church. He has a heart for prayer, creativity, and equipping the next generation.' 
+          />
         </div>
         {/* <div className="mt-6">
           <h3 className="text-xl font-semibold mb-2">Church Elders and Leaders:</h3>
@@ -56,19 +61,19 @@ export default function AboutPage() {
       </section>
 
       {/* Denomination & Beliefs */}
-      <section className="mb-12">
+      {/* <section className="mb-12">
         <h2 className="text-2xl font-semibold mb-4 flex items-center">
-          <Church className="mr-2" /> Denominasi & Keyakinan Teologis
+          <Church className="mr-2" /> 
         </h2>
         <p className="text-gray-600">
-        Kami adalah bagian dari denominasi GBI (Gereja Bethel Indonesia), yang menekankan ajaran Alkitab, ibadah, dan pertumbuhan rohani.
+     
         </p>
-      </section>
+      </section> */}
     </div>
   )
 }
 
-function LeadershipCard({ name, role, imageUrl }: { name: string; role: string; imageUrl: string }) {
+function LeadershipCard({ name, role, imageUrl, description }: { name: string; role: string; imageUrl: string; description : string }) {
   return (
     <div className="bg-white shadow-md rounded-lg overflow-hidden">
       <Image
@@ -81,6 +86,9 @@ function LeadershipCard({ name, role, imageUrl }: { name: string; role: string; 
       <div className="p-4">
         <h3 className="font-semibold text-lg">{name}</h3>
         <p className="text-gray-600">{role}</p>
+      </div>
+      <div>
+        <p className="p-6">{description}</p>
       </div>
     </div>
   )

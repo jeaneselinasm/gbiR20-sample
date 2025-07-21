@@ -6,48 +6,47 @@ import { Label } from "@/components/ui/label"
 
 export default function ContactPage() {
   return (
-    <div className="container mx-auto px-4 py-8 bg-violet-50">
-      <h1 className="text-4xl font-bold mb-6">Hubungi Kami</h1>
+    <div className="container mx-auto px-4 py-8 ">
+      <h1 className="text-4xl font-bold mb-6">Contact Us</h1>
 
-      <div className="grid md:grid-cols-2 gap-8 bg-violet-50">
+      <div className="grid md:grid-cols-2 gap-8 ">
         <div>
           <section className="mb-8">
             <h2 className="text-2xl font-semibold mb-4 flex items-center">
               <MapPin className="h-6 w-6 mr-2 text-red-600" />
-              Alamat Gereja
+             Church Address
             </h2>
             <p className="text-gray-700">
-              Jalan Rawasari Komplek PSMTI No. 1, RT/RW 001/007, Kampung Bulang, Tanjung Pinang Timur, Kepulauan Riau -
-              29122
+             Pc Street 12 East Area
             </p>
           </section>
 
           <section className="mb-8">
             <h2 className="text-2xl font-semibold mb-4 flex items-center">
               <Phone className="h-6 w-6 mr-2 text-green-600" />
-              Telepon & Email
+              Telephone & Email
             </h2>
             <p className="text-gray-700 mb-2">
-              <strong>Email Utama:</strong> gbimyhomerawasari@gmail.com
+              <strong>Phone </strong>(021) 1234-5678
             </p>
             <p className="text-gray-700">
-              <strong>Email Alternatif:</strong> tanjungpinangr20@gmail.com
+              <strong>Email </strong> hello@gracechurch.id
             </p>
           </section>
 
           <section className="mb-8">
             <h2 className="text-2xl font-semibold mb-4 flex items-center">
               <Clock className="h-6 w-6 mr-2 text-blue-600" />
-              Jam Operasional
+           Office Hours
             </h2>
-            <p className="text-gray-700">Senin - Jumat : 9:00 AM - 17:00 WIB</p>
+            <p className="text-gray-700">Monday-Friday | 10.00 AM - 03.00 PM</p>
           </section>
 
           <section className="mb-8">
             <h2 className="text-2xl font-semibold mb-4">Google Maps</h2>
             <div className="aspect-w-16 aspect-h-9">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.3184770236366!2d104.4455!3d0.9167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMMKwNTUnMDAuMCJOIDEwNMKwMjYnNDMuOCJF!5e0!3m2!1sen!2sid!4v1621234567890!5m2!1sen!2sid"
+                src=""
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
@@ -62,27 +61,27 @@ export default function ContactPage() {
           <section>
             <h2 className="text-2xl font-semibold mb-4 flex items-center ">
               <Mail className="h-6 w-6 mr-2 text-purple-600" />
-              Formulir Kontak
+              Contact Form
             </h2>
             <form className="space-y-4">
               <div>
-                <Label htmlFor="name">Nama</Label>
-                <Input id="name" placeholder="Masukkan nama anda" />
+                <Label htmlFor="name">Name</Label>
+                <Input id="name" placeholder="Please Input your name" />
               </div>
               <div>
                 <Label htmlFor="email">Email</Label>
-                <Input id="email" type="email" placeholder="anda@email.com" />
+                <Input id="email" type="email" placeholder="your@email.com" />
               </div>
               <div>
                 <Label htmlFor="subject">Subject</Label>
-                <Input id="subject" placeholder="Pertanyaan / Permohonan Doa" />
+                <Input id="subject" placeholder="Question / Prayer Request" />
               </div>
               <div>
-                <Label htmlFor="message">Pesan</Label>
-                <Textarea id="message" placeholder="Tulis pesan anda disini..." className="h-32" />
+                <Label htmlFor="message">Message</Label>
+                <Textarea id="message" placeholder="Write your message here..." className="h-32" />
               </div>
-              <Button type="submit" className="w-full">
-                Kirim Pesan
+              <Button type="submit" className="w-full bg-violet-800">
+               Send
               </Button>
             </form>
           </section>

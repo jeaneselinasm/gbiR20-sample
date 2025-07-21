@@ -17,7 +17,7 @@ const Header = () => {
     <header className="bg-white shadow-md">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link href="/" className="text-xl text-violet900 font-bold">
-       Gace Fellowship Church
+       Grace Fellowship Church
         </Link>
         <nav className="hidden md:flex space-x-4 text-blue-700 hover:text-blue-900">
           <NavLink  href="/">Home</NavLink>

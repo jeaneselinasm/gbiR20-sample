@@ -1,48 +1,49 @@
-import { Calendar, MapPin, Video, Users, Sun, Moon } from "lucide-react"
+import { Calendar, MapPin, Users, Sun, Home } from "lucide-react"
 import type React from "react" // Added import for React
 
 export default function ServicesPage() {
   return (
     <div className="container mx-auto px-4 py-8 bg-violet-50">
        <section className="text-center mb-12">
-        <h1 className="text-4xl md:text-5xl text-violet900 font-bold mb-4">Ibadah dan Persekutuan</h1>
+        <h1 className="text-4xl md:text-5xl text-violet900 font-bold mb-4">⛪ Worship & Fellowship Schedule</h1>
+        <p>We welcome you to join us in worship, community, and spiritual growth throughout the week. Whether you're new or looking to get connected, there's a place for you at Grace Fellowship Church.</p>
       </section>
 
       <div className="space-y-12">
         <ServiceSection
-          title="Ibadah Minggu"
+          title="Sunday Services"
           icon={<Sun className="h-8 w-8 text-yellow-500" />}
           services={[
-            { name: "Ibadah Umum", time: "8:00 AM & 11:00 AM WIB" },
-            { name: "Ibadah Anak", time: "8:00 AM & 11:00 AM WIB | GBI My Home lantai 2" },
+            { name: "Main Worship Service", time: "🕘 9:00 AM | 📍 Main Sanctuary | In-Person & Online" },
+            { name: "Kids Service", time: "🕘 9:00 AM | 📍 Kids Ministry Rooms" },
           ]}
         />
 
         <ServiceSection
-          title="Ibadah Remaja & Pemuda"
+          title=" Weekly Fellowship & Bible Study"
           icon={<Users className="h-8 w-8 text-blue-500" />}
           services={[
-            { name: "NextGen My Home", time: "Setiap hari sabtu pukul 4:00 PM WIB | GBI My Home lantai 1" },
-            { name: "Dewasa Muda My Home", time: "Setiap hari sabtu pukul 7:00 PM WIB | GBI My Home lantai 2" },
+            { name: "Tuesday Prayer Meeting", time: "Every Tuesday | 🕗 8:00 PM | 📍 Online via Zoom" },
+            { name: "Wednesday Women’s Fellowship", time: "Every Wednesday | 🕗 6:00 PM | 📍  Church Café Room" },
+            { name: "Friday Youth Night", time: "Every Friday | 🕗 6:00 PM | 📍  Youth Hall" },
           ]}
         />
 
         <ServiceSection
-          title="Ibadah Tengah Minggu"
-          icon={<Moon className="h-8 w-8 text-indigo-500" />}
+          title="Home Cell Groups"
+          icon={<Home className="h-8 w-8 text-indigo-500" />}
           services={[
-            { name: "Doa Terobosan", time: "Setiap hari selasa pukul 7:00 PM WIB | GBI My Home lantai 2" },
-            { name: "Doa Puasa Online", time: "Setiap hari jumat pukul 5:00 AM WIB (via zoom meeting)" },
-            { name: "Doa Fajar Onsite", time: "Setiap hari sabtu pukul 5:00 AM WIB | GBI My Home lantai 2" },
+            { name: "", time: "Various Days & Times 📍 Different locations across the city" },
+            
           ]}
         />
       </div>
 
       <div className="mt-12 space-y-8">
         <InfoSection
-          title="Lokasi"
+          title="Location"
           icon={<MapPin className="h-6 w-6 text-red-500" />}
-          content="Jalan Rawasari Komplek PSMTI No. 1, RT/RW 001/007, Kampung Bulang, Tanjung Pinang Timur, Kepulauan Riau - 29122"
+          content="Pc Street 12 East Area"
         />
 
         {/* <InfoSection

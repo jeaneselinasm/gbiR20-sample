@@ -8,7 +8,7 @@ import type React from "react" // Added import for React
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "GBI My Home Rawasari",
+  title: "Grace Fellowship Church",
   description: "Welcome to Our Church - A place of worship, community, and growth",
 }
 
